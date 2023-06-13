@@ -1,0 +1,10 @@
+alass: true
+ffsubsync: false
+subtitles_format:
+- srt
+- ass
+- vtt
+videos_format:
+- mp4
+- mkv
+- ts
