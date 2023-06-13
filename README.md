@@ -13,10 +13,9 @@
     # Add ffmpeg\bin to PATH
     python subsyncmatcher.py -h
 
+![20230614000006](https://github.com/NullisNuer/subsyncmatcher/assets/135815308/a7f8a7bc-67fd-4f79-b542-b776c705d7fe)
 
-![20230614000006](https://github.com/NullisNuer/subsyncmatcher/assets/135815308/58f2b517-11ca-49d7-9729-e9710144c619)
-
-![20230614000140](https://github.com/NullisNuer/subsyncmatcher/assets/135815308/548a718b-493a-4b56-850d-d88d76d68a74)
+![20230614000140](https://github.com/NullisNuer/subsyncmatcher/assets/135815308/0d944c8c-cf1b-488e-a553-2a1133734091)
   
   # Credits
     * https://github.com/kaegi/alass
