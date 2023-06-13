@@ -9,6 +9,8 @@
   # Usage 2
     # install python
     pip install -r requirements.txt
+    # Download ffmpeg from https://ffmpeg.org/
+    # Add ffmpeg\bin to PATH
     python subsyncmatcher.py -h
 
 
