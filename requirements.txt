@@ -1,0 +1,4 @@
+cn2an~=0.5.19
+future~=0.18.3
+PyYAML~=6.0
+ffsubsync~=0.4.25
