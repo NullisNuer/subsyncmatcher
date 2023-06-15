@@ -11,6 +11,7 @@
     pip install -r requirements.txt
     # Download ffmpeg from https://ffmpeg.org/
     # Add ffmpeg\bin to PATH
+    # Put alass-cli.exe or alass-linux in subsyncmatcher\bin\
     python subsyncmatcher.py -h
 
 ![20230614000006](https://github.com/NullisNuer/subsyncmatcher/assets/135815308/a7f8a7bc-67fd-4f79-b542-b776c705d7fe)
