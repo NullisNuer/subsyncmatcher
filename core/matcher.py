@@ -292,7 +292,8 @@ class MatcherZH:
                                                             eps.append(fm)
                                                     except ValueError:
                                                         continue
-                                                m_ep = str(min(eps))
+                                                if eps:
+                                                    m_ep = str(min(eps))
         try:
             float(m_ep)
         except ValueError:
@@ -642,7 +643,8 @@ class MatcherEN:
                                                             eps.append(fm)
                                                     except ValueError:
                                                         continue
-                                                m_ep = str(min(eps))
+                                                if eps:
+                                                    m_ep = str(min(eps))
         try:
             float(m_ep)
         except ValueError:
