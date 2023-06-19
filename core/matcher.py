@@ -4,6 +4,7 @@ import glob
 import cn2an
 import platform
 import datetime
+import sys
 
 import tkinter as tk
 from tkinter import filedialog
@@ -67,7 +68,7 @@ class MatcherZH:
             pass
         else:
             print('\n字幕数量和视频数量不匹配，无法使用顺序模式')
-            exit(1)
+            sys.exit(1)
         multiple = int(len(s_files) / len(v_files))
         for s in s_files:
             filename, extension = self.match_subs(s, s_ext)
@@ -103,7 +104,7 @@ class MatcherZH:
                     if filename not in nv_dict:
 
                         def select_video():
-                            v = list(filedialog.askopenfilenames())
+                            v = list(filedialog.askopenfilenames(initialdir=folder))
                             which_video.destroy()
                             if v:
                                 return v[0]
@@ -358,7 +359,7 @@ class MatcherZH:
         print('\n')
         is_quit = input("请检查匹配列表，是否确认开始运行？(回车确认|输入q取消)")
         if is_quit == 'q' or is_quit == 'Q':
-            exit(1)
+            sys.exit(1)
         if self.is_alass_mod:
             alass_cli(sub_list, self.is_rename_mod)
         if self.is_ffsubsync_mod:
@@ -417,7 +418,7 @@ class MatcherEN:
             pass
         else:
             print("\nThe amount of subtitles doesn't match the amount of videos, can't use order mode.")
-            exit(1)
+            sys.exit(1)
         multiple = int(len(s_files) / len(v_files))
         for s in s_files:
             filename, extension = self.match_subs(s, s_ext)
@@ -453,7 +454,7 @@ class MatcherEN:
                     if filename not in nv_dict:
 
                         def select_video():
-                            v = list(filedialog.askopenfilenames())
+                            v = list(filedialog.askopenfilenames(initialdir=folder))
                             which_video.destroy()
                             if v:
                                 return v[0]
@@ -711,7 +712,7 @@ class MatcherEN:
         is_quit = input(
             "Please check the matching list, are you sure to start running? (Enter to confirm | Enter q to cancel)")
         if is_quit == 'q' or is_quit == 'Q':
-            exit(1)
+            sys.exit(1)
         if self.is_alass_mod:
             alass_cli(sub_list, self.is_rename_mod)
         if self.is_ffsubsync_mod:

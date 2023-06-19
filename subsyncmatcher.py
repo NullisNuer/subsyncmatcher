@@ -145,11 +145,11 @@ if __name__ == '__main__':
                     paths = files + folders
                 except tk.TclError:
                     print('\n无法创建GUI界面，请使用命令行模式')
-                    exit(1)
+                    sys.exit(1)
 
                 if not paths:
                     print('\n未输入有效路径或无字幕文件，程序退出...')
-                    exit(1)
+                    sys.exit(1)
 
         MatcherZH(paths, video_extensions, subs_extensions, is_order_mod, is_rename_mod, is_alass_mod, is_ffsubsync_mod).run()
     else:
@@ -238,10 +238,10 @@ if __name__ == '__main__':
                     paths = files + folders
                 except tk.TclError:
                     print('\nUnable to create a GUI interface, please use command line mode')
-                    exit(1)
+                    sys.exit(1)
 
                 if not paths:
                     print('\nNo valid path or no subtitles is selected, exiting...')
-                    exit(1)
+                    sys.exit(1)
 
         MatcherEN(paths, video_extensions, subs_extensions, is_order_mod, is_rename_mod, is_alass_mod, is_ffsubsync_mod).run()
