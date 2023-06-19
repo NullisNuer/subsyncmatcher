@@ -2,7 +2,7 @@
     # Automaticlly match videos and subtitles for sync tools like alass and ffsubsync.
     # Supporting Windows, and possibly supporting Linux, I didn't test.
   # Usage 1
-    # Download windows version from https://github.com/NullisNuer/subsyncmatcher/releases/tag/0.0.1-beta
+    # Download windows version from https://github.com/NullisNuer/subsyncmatcher/releases
     # if you want to use with ffsubsync:
         # install python
         pip install ffsubsync
