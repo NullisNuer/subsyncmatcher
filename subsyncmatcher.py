@@ -9,10 +9,10 @@ import tkinter as tk
 from tkinter import filedialog
 
 ascii_art = r"""
-  __                  __                         
- (    /_/'_//_  _    (      _    /|/| __/_ / _ _ 
-__)(/()// /((-_)    __)(//)(    /   |(//( /)(-/  
-                       /                                           
+      __                  __                         
+     (    /_/'_//_  _    (      _    /|/| __/_ / _ _ 
+    __)(/()// /((-_)    __)(//)(    /   |(//( /)(-/  
+                           /                                           
      """
 # http://www.network-science.de/ascii/ Format:doom
 logger = logging.getLogger(__name__)
@@ -152,6 +152,8 @@ if __name__ == '__main__':
                     sys.exit(1)
 
         MatcherZH(paths, video_extensions, subs_extensions, is_order_mod, is_rename_mod, is_alass_mod, is_ffsubsync_mod).run()
+        print("\n按回车键退出...")
+        input()
     else:
         from core.matcher import MatcherEN
 
@@ -245,3 +247,5 @@ if __name__ == '__main__':
                     sys.exit(1)
 
         MatcherEN(paths, video_extensions, subs_extensions, is_order_mod, is_rename_mod, is_alass_mod, is_ffsubsync_mod).run()
+        print("\nEnter to exit...")
+        input()
